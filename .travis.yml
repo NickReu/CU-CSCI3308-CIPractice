@@ -1,2 +1,5 @@
 language: c
-script: sudo apt install check && make && make test
+script: make && make test
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y check
